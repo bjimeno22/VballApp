@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="48dp"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/homeTeamNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="Enter Home Team Name" />
+
+    <EditText
+        android:id="@+id/awayTeamNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="Enter Away Team Name" />
+
+    <EditText
+        android:id="@+id/homeScoreInput"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="Home Score"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/awayScoreInput"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="Away Score"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/homeWinRateText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Home Team Win Rate: 0" />
+
+    <TextView
+        android:id="@+id/awayWinRateText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Away Team Win Rate: 0" />
+
+    <TextView
+        android:id="@+id/predictionText"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Prediction will appear here" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Submit Match Result" />
+
+</LinearLayout>
